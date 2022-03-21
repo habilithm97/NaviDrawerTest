@@ -15,8 +15,14 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.navidrawertest.R;
 
 public class HomeFragment extends Fragment {
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_home, container, false);
+        return  rootView;
+    }
 
-    private HomeViewModel homeViewModel;
+    /*private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -31,5 +37,5 @@ public class HomeFragment extends Fragment {
             }
         });
         return root;
-    }
+    } */
 }
