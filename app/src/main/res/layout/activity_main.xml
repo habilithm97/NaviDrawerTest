@@ -10,6 +10,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <!--중복되는 부분을 포함시킴 -->
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
